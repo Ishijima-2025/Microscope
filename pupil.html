@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>pupil</title>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-Bold-Blue"><span class="X-Large-Bold-RED">対物レンズの瞳径</span></p>
+<p>&nbsp;</p>
+<p>さて，<a href="Sin condition-01.html">正弦条件</a>，を理解したところで，これを応用して対物レンズの瞳径を計算してみましょう．</p>
+<p>現在の対物レンズの主流は，<span class="Large-Bold-Red">無限遠レンズ</span>，です．<br />
+ですので，サンプルからの光は平行光となって対物レンズから出ます．<br />
+この平行光の直径を，<span class="Large-Bold-Red">瞳径</span>，と呼びます．<br />
+明るい画像を得るためには，この光線を無駄なくカメラに伝える必要があります．</p>
+<p>&nbsp;</p>
+<p><img src="pupil.png" width="745" height="269" /></p>
+<p>さきの<a href="Sin condition-01.html">正弦条件</a>と同じ考え方で対物レンズを記したものが上図となります．従って，</p>
+<p>\(\Large   \begin{align*} 瞳径  &amp;= 2 \times 対物レンズの焦点距離 \times  n \cdot sin \theta \\<br />
+&amp;=  2 \times  対物レンズの焦点距離 \times  NA \end{align*} \)</p>
+<p>が成り立ちます（レンズの厚みを無視しています）．</p>
+<p>対物レンズの倍率は，<a href="http://www.fbs.osaka-u.ac.jp/labs/ishijima/mugen-03.html">無限遠光学系の結像特性</a>，で示したように，</p>
+<p>\(\Large 拡大率 = \frac{結像レンズの焦点距離}{対物レンズの焦点距離} \)</p>
+<p>となるので，</p>
+<p>\(\Large   瞳径 =   2 \times  \frac{結像レンズの焦点距離}{拡大率} \times  NA \)</p>
+<p>となります．</p>
+<p>では，結像レンズの焦点距離はどのくらいでしょう？<br />
+これは，各社によって変わりますが，</p>
+<table width="278" border="1">
+  <tr>
+    <td width="89">メーカー</td>
+    <td width="173">結像レンズの焦点距離</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.nikon-instruments.jp/jpn/learn-know/microscope-abc/learn-more-microscope/about-eye" target="_blank">ニコン</a></td>
+    <td>200 mm</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.olympus-lifescience.com/ja/support/learn/03/044/" target="_blank">オリンパス</a></td>
+    <td>180 mm</td>
+  </tr>
+</table>
+<p>となりますので，</p>
+<p>対物レンズの焦点距離</p>
+<table width="551" border="1">
+  <tr>
+    <td width="85">メーカー</td>
+    <td width="169">結像レンズの焦点距離</td>
+    <td width="87">対物レンズ</td>
+    <td width="182">対物レンズの焦点距離</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.nikon-instruments.jp/jpn/learn-know/microscope-abc/learn-more-microscope/about-eye" target="_blank">ニコン</a></td>
+    <td>200 mm</td>
+    <td>100倍</td>
+    <td>2.0 mm</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>60倍</td>
+    <td>3.3 mm</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.olympus-lifescience.com/ja/support/learn/03/044/" target="_blank">オリンパス</a></td>
+    <td>180 mm</td>
+    <td>100倍</td>
+    <td>1.8 mm</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>60倍</td>
+    <td>3.0 mm</td>
+  </tr>
+</table>
+<p>対物レンズの瞳径</p>
+<table width="504" border="1">
+  <tr>
+    <td width="85">メーカー</td>
+    <td width="170">結像レンズの焦点距離</td>
+    <td width="85">対物レンズ</td>
+    <td width="57">NA</td>
+    <td width="73">瞳径</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.nikon-instruments.jp/jpn/learn-know/microscope-abc/learn-more-microscope/about-eye" target="_blank">ニコン</a></td>
+    <td>200 mm</td>
+    <td>100倍</td>
+    <td>1.40</td>
+    <td>5.6 mm</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>60倍</td>
+    <td>1.40</td>
+    <td>9.3 mm</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.olympus-lifescience.com/ja/support/learn/03/044/" target="_blank">オリンパス</a></td>
+    <td>180 mm</td>
+    <td>100倍</td>
+    <td>1.40</td>
+    <td>5.0 mm</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>60倍</td>
+    <td>1.40</td>
+    <td>8.4 mm</td>
+  </tr>
+</table>
+<p>となります．表のNAはあくまで参考値なので使用する対物レンズのNAを確認ください．</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="index.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
