@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FFT-06-3</title>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+.style10 {color: #000000; }
+.style1 {color: #0000FF}
+</style>
+</head>
+
+<body>
+<h1 class="style1">組み合わせレンズの焦点位置，倍率-02</h1>
+<p class="Large-Bold-Blue">		焦点位置の変化</p>
+<p><img src="Combination Lens-02.jpg" width="795" height="234" /></p>
+<p>&nbsp;</p>
+<p>ここで，レンズf<sub>2</sub>を考えると，ｘの位置から発せられた光は発散して左側に向かうこととなります（x&lt;f<sub>2</sub>のため）．<br />
+そこで，レンズの公式から，</p>
+<p>\(\Large \frac{1}{x} - \frac{1}{f_1 - d} = \frac{1}{f_2} \)</p>
+<p>となります．従って，</p>
+<p>\(\Large 
+\begin{eqnarray}  \frac{1}{x} &amp;=&amp; \frac{1}{f_2} +  \frac{1}{f_1 - d} \\<br />
+&amp;=&amp; \frac{f_1 + f_2 -d}{f_2 (f_1 - d)} \\
+<br />
+\end{eqnarray}　\)　</p>
+<p>\(\Large x = \frac{f_1 \cdot f_2 - f_2 \cdot d}{f_1 + f_2 -d} \)</p>
+<p>となるわけです．</p>
+<p>次に，δ<sub>1</sub>，の関係を調べるために，二つの相似三角形の関係式を検討します．</p>
+<p><img src="Combination Lens-03.jpg" width="795" height="234" /></p>
+<p>紫とピンクの三角形の相似から，</p>
+<p>\(\Large \frac{h_1}{f_1} = \frac{h_2}{f_1- d} \)</p>
+<p>を得ることができます．従って，</p>
+<p>\(\Large \frac{h_2}{h_1} = \frac{f_1 - d}{f_1} \)</p>
+<p>となります．また，</p>
+<p><img src="Combination Lens-04.jpg" width="795" height="234" /></p>
+<p>紫とピンクの三角形の相似から，</p>
+<p>\(\Large \frac{h_1}{x + \delta_1} = \frac{h_2}{x} \)</p>
+<p>\(\Large \frac{h_2}{h_1} = \frac{x}{x + \delta_1} \)</p>
+<p>を得ることができます．従って，</p>
+<p>\(\Large  \frac{f_1 - d}{f_1} =  \frac{x}{x + \delta_1} \)</p>
+<p>\(\Large  x + \delta_1 = x \cdot \frac{x}{f_1-d} \)</p>
+<p>\(\Large   \delta_1 = \frac{x \cdot f_1}{f_1-d}-x = \frac{x \cdot f_1 - x \cdot (f_1- d)}{f_1-d} = \frac{x \cdot d}{f_1 - d}\)</p>
+<p>となります．上の計算から，</p>
+<p>\(\Large x = \frac{f_1 \cdot f_2 - f_2 \cdot d}{f_1 + f_2 -d} \)</p>
+<p>となるので，</p>
+<p>\(\Large \begin{eqnarray} \delta_1 &amp;=&amp; \frac{d}{f_1 - d} \cdot \frac{f_1 \cdot f_2 - f_2 \cdot d}{f_1 + f_2 - d} \\<br />
+  &amp;=&amp; 
+\frac{d}{f_1 - d} \cdot \frac{f_2 \cdot (f_1- d)}{f_1 + f_2 - d} \\<br />
+&amp;=&amp; 
+\frac{f_2 \cdot d}{f_1 + f_2 - d} \\<br />
+\end{eqnarray}　\)　</p>
+<p>と簡単になります．また，ｆ，は，</p>
+<p>\(\Large \begin{eqnarray} f &amp;=&amp; x + \delta_1 \\<br />
+  &amp;=&amp; \frac{f_1 \cdot f_2 - f_2 \cdot d}{f_1 + f_2 - d} + \frac{f_2 \cdot d}{f_1 + f_2 -d} \\<br />
+  &amp;=&amp; 
+\frac{f_1 \cdot f_2}{f_1 + f_2 -d} \\<br />
+\end{eqnarray}　\)　</p>
+<p>となり，同様に，δ<sub>2</sub>，は，</p>
+<p>\(\Large \delta_2 = \frac{f_1 \cdot  d}{f_1 + f_2 -d} \)</p>
+<p>となります．</p>
+<p>このように，<span class="Large-Bold-Red">主点位置</span>，を設定することにより，組み合わせレンズの位置関係がすっきりと理解できるようになります．</p>
+<p>次に，主点を通る光線の関係を明らかにしていきましょう．</p>
+<p><span class="style10"><a href="Combination Lens-01.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="index.html"><img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="Combination Lens-03.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+</body>
+</html>
