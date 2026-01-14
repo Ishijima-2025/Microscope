@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無題ドキュメント</title>
+<style type="text/css">
+<!--
+.style5 {font-size: large; color: #FF0000; font-weight: bold; }
+.style6 {color: #0000FF}
+.style10 {color: #000000; }
+.style7 {
+	font-size: large;
+	color: #0000FF;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body>
+<h1 class="style6">実際の計算</h1>
+<p>さて，<a href="CCD-02.html">前に示した条件</a>で，ミクロメータ，を観察してみましょう．</p>
+<p><img src="Micrometer-01.jpg" width="350" height="264" /> </p>
+<p>この画像は，一区切り，１０ミクロン，のミクロメータの画像です．<br />
+先に述べたように，<br />
+　顕微鏡の倍率：４０倍<br />
+　カメラ：ワテック<br />
+で撮影しました．<br />
+PCへの取り込みは，カノープスのボードを使いました．</p>
+<p>実際の画像は，640x480，ですが，トリミングしてあります．<br />
+さて，では，どのくらいのピクセル数かを計ってみましょう．<br />
+計測には，ImageJ，Photoshop，などを使ってみましょう．</p>
+<p><img src="Micromete-r-02.jpg" width="350" height="264" /></p>
+<p>すると，縦横ともに，１９１ピクセルとなります．<br />
+では，計算上はどうなるでしょう？</p>
+<table width="609" border="1">
+  <tr>
+    <td width="171">&nbsp;</td>
+    <td width="262">計算</td>
+    <td width="74">横</td>
+    <td width="74">縦</td>
+  </tr>
+  <tr>
+    <td>実際の大きさ</td>
+    <td>&nbsp;</td>
+    <td>５０ ミクロン</td>
+    <td>５０　ミクロン</td>
+  </tr>
+  <tr>
+    <td>拡大率</td>
+    <td>&nbsp;</td>
+    <td>４０倍</td>
+    <td>４０倍</td>
+  </tr>
+  <tr>
+    <td>像の大きさ</td>
+    <td>実際の大きさ　×　拡大率</td>
+    <td>２　ミリ</td>
+    <td>２　ミリ</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>ＣＣＤの有効画素数</td>
+    <td>&nbsp;</td>
+    <td>７６８</td>
+    <td>４９４</td>
+  </tr>
+  <tr>
+    <td>セルサイズ</td>
+    <td>&nbsp;</td>
+    <td>８.４　ミクロン</td>
+    <td>９.８　ミクロン</td>
+  </tr>
+  <tr>
+    <td>ＣＣＤのサイズ</td>
+    <td>画素数　×　セルサイズ</td>
+    <td>６.４５　ミリ</td>
+    <td>４.８４　ミリ</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>ピクセル数</td>
+    <td>&nbsp;</td>
+    <td>６４０</td>
+    <td>４８０</td>
+  </tr>
+  <tr>
+    <td>５０ミクロンのピクセル数</td>
+    <td>像の大きさ　÷　ＣＣＤのサイズ　×ピクセル数</td>
+    <td><span class="style5">１９８.２</span></td>
+    <td><span class="style5">１９８.１</span></td>
+  </tr>
+</table>
+<p>となります．<br />
+まあ，あっていますが，７ピクセルほど違いますね．．．<span class="style7">３％</span>ほど．．．<br />
+この違いは．．．．すいません，わかりません．．<br />
+  <span class="style7">どなたか，ご存じの方がおりましたら，連絡ください．</span></p>
+<p>とにかく．．．計算上からも，ちょっとの誤差はありますが，PCに取り込んだ場合のサイズを見積もることができました．<br />
+実際には，あらかじめミクロメータの画像を取り込んでおいて，キャリブレーションを行いますが，このように，光学的に倍率を見積もることも原理を理解する上では重要です．</p>
+<p>さて，次は，実際の画像をPCに落とし込む場合の注意点を説明したいと思います．</p>
+<p><span class="style10"><a href="CCD-03.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="indexindex.html"><img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="CCD-05.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+</body>
+</html>

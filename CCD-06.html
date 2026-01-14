@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無題ドキュメント</title>
+<style type="text/css">
+<!--
+.style1 {color: #0000FF}
+.style2 {
+	font-size: large;
+	color: #0000FF;
+}
+.style4 {font-size: large; color: #FF0000; }
+.style10 {color: #000000; }
+-->
+</style>
+</head>
+
+<body>
+<h1 class="style1">Adobe Premiereの場合の画像変換</h1>
+<p>さて， Adobe Premiereを例にとって変換の様子を見てみましょう．<br />
+もちろん，他のアプリでも変換できますが，一例として．</p>
+<p>Premiereにおいて，ムービーから静止画の書き出しは，<br />
+　<span class="style2">ムービー書きだし</span><br />
+コマンドで，ファイル形式をTIFFなどの静止画形式に指定すればいいのです．<br />
+その際に，<br />
+<span class="style4">　フレームサイズ<br />
+　ピクセル縦横比</span><br />
+を設定できます．</p>
+<p><img src="Premiere-2.jpg" width="522" height="256" /></p>
+<p>この状態で，<br />
+  <span class="style2">　フレームサイズ：640ｘ480，720ｘ480<br />
+　ピクセル縦横比：D1/DV NTSC (0.9)，
+  正方形ピクセル(1.0)</span><br />
+  という４通りの条件で書き出してみましょう．<br />
+</p>
+<p>その結果，</p>
+<p><img src="pixel-full.jpg" width="500" height="333" /></p>
+<p>となります．<br />
+  720と640で横のサイズが違うのは当然ですね．<br />
+ただ，720(1.0)では両サイドに黒の帯が，640(0.9)では今度は縦に黒の帯があります．</p>
+<p>さて，もう少し拡大してみましょう．</p>
+<p><img src="Pixel-2.jpg" width="450" height="350" /></p>
+<p>黄色の枠が，正方形です．<br />
+このように，<span class="style4">Premiereにおいては，720，640，どちらにせよ，ピクセル縦横比，を1.0に設定しておけば正確に縦横比を設定できる</span>ことがわかりました．</p>
+<p>これはあくまで，Premiereでの設定の仕方ですので，各自変換するソフトをチェックしてみてください．<br />
+  違うソフトでは，縦横比の設定自体ができないソフトもあります．<br />
+そのような場合で，縦横の比率が変化している場合には，縦と横のキャリブレーションを変えて解析する必要があります．</p>
+<p>今回の説明はあくまで，実際の作業上でのノウハウとなりますので，なぜ？そうなるのかは，完全に把握してはいません．<br />
+また，ＣＣＤ自体のサイズも正方形ではありません．<br />
+ここら辺は私の知識ではもうどうしようもありません．<br />
+ですので，原理などを詳しく知りたい方は，ちゃんと勉強してくださいね．</p>
+<p>最近の<a href="http://www.andor.com/scientific_cameras/ixon/" target="_blank">EM-CCDカメラ</a>などは最初から，正方形のピクセル形状ですし，画像をそのままPCに転送できるという優れものです．<br />
+  しかし，高いのが玉にきず．．．．<br />
+</p>
+<p><span class="style10"><a href="CCD-05.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="index.html"><img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="kenkyu.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span></p>
+</body>
+</html>

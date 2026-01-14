@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無題ドキュメント</title>
+<style type="text/css">
+<!--
+.style10 {color: #000000; }
+.style11 {color: #0000FF}
+.style12 {
+	font-size: x-large;
+	color: #FF0000;
+	font-weight: bold;
+}
+.style13 {
+	font-size: large;
+	color: #0000FF;
+	font-weight: bold;
+}
+.style15 {font-size: large; color: #FF0000; font-weight: bold; }
+.style16 {color: #FF0000; font-size: large;}
+-->
+</style>
+</head>
+
+<body>
+<h1 class="style11">実際の画像をPCに落とし込む場合の注意点</h1>
+<p>さて，ビデオ信号などのアナログ信号を，PCで取り扱えるようなデジタル信号に変換する際には，いろいろな注意点があります．<br />
+ビデオ信号の場合では，<br />
+　<span class="style12">ピクセル縦横比</span><br />
+が重要なポイントです．</p>
+<p><a href="http://www.adobe.com/jp/devnet/flash/articles/video_guide_06.html" target="_blank">アドビのサイト</a>，にありますように，NTSC信号においては，ピクセルの形が正方形ではありません．</p>
+<table width="541" border="1">
+  <tr>
+    <td width="120">&nbsp;</td>
+    <td width="137"><strong><span id="__firefox-findbar-search-id">イメージサイズ</span></strong></td>
+    <td width="57"><strong><span id="__firefox-findbar-search-id2">フレームレート</span></strong></td>
+    <td width="64"><strong>縦横比</strong></td>
+    <td width="129"><strong><span id="__firefox-findbar-search-id3">ディスプレイ</span></strong></td>
+  </tr>
+  <tr>
+    <td><span id="__firefox-findbar-search-id4">NTSC</span></td>
+    <td><span id="__firefox-findbar-search-id7">720×480</span></td>
+    <td><span id="__firefox-findbar-search-id10">29.97</span></td>
+    <td><span id="__firefox-findbar-search-id12">D1</span></td>
+    <td><span id="__firefox-findbar-search-id14">インターレース</span></td>
+  </tr>
+  <tr>
+    <td><span id="__firefox-findbar-search-id5">PAL</span></td>
+    <td><span id="__firefox-findbar-search-id8">720×576</span></td>
+    <td><span id="__firefox-findbar-search-id11">25</span></td>
+    <td><span id="__firefox-findbar-search-id13">D1</span></td>
+    <td><span id="__firefox-findbar-search-id15">インターレース</span></td>
+  </tr>
+  <tr>
+    <td><span id="__firefox-findbar-search-id6">コンピュータ</span></td>
+    <td><span id="__firefox-findbar-search-id9">可変 <br />
+（非常に大きい）</span></td>
+    <td>-</td>
+    <td><span id="__firefox-findbar-search-id16">正方形</span></td>
+    <td><span id="__firefox-findbar-search-id17">プログレッシブ</span></td>
+  </tr>
+</table>
+<p>NTSCビデオのイメージでは，走査線の数（縦方向の分解能）が５２５本ありますが，<span id="__firefox-findbar-search-id18">業務用のSMPTE 259M規格</span>で<br />
+　<span class="style13" id="__firefox-findbar-search-id19">720×486</span><br />
+に変換します．　<br />
+さらに，４８６をきりのいい，４８０にして，<br />
+　<span id="__firefox-findbar-search-id20"><span class="style13">720×480</span><br />
+とします．</span><br />
+縦横比は，720:480=<span class="style15">3:2</span>，ですね．<br />
+あれ？テレビは<span class="style15">4:3</span>じゃなかったでしたっけ？</p>
+<p>それは，<a href="http://livedocs.adobe.com/flash/9.0_jp/flvencoder/wwhelp/wwhimpl/common/html/wwhelp.htm?context=LiveDocs_NoParts&amp;file=FLV_11.html" target="_blank">アドビのこのサイト</a>によると，<span id="__firefox-findbar-search-id21">先に述べたように各ピクセルは、<span class="style13">ピクセル縦横比 が 10:11 (縦長のピクセル) の矩形</span></span>，となります．<br />
+何で，そんな面倒くさいことをしたの？ですが，<a href="http://www.amy.hi-ho.ne.jp/mizuy/tech/video.htm" target="_blank">こちらのサイト</a>にあるように，<br />
+　<span class="style16" id="__firefox-findbar-search-id22">走査線で作られる画像は水平に隙間がある。正方形画素を横方向に密接して並べ、縦方向は若干の隙間を持たせて並べると、理解できる</span><br />
+ということでしょうか．</p>
+<p><img src="pixel.jpg" width="423" height="161" /></p>
+<p>となると，そのままPCへ持って行くと，横に広がった映像になってしまっているので，普通は縦横比を調整して，PCで表示しています．<br />
+Windows Media Playerでは，映像表示中に，プロパティを見ると，<br />
+　<span class="style13">640x480</span><br />
+になっていますね，これは，たぶん，</p>
+<p><img src="CCD-04.gif" width="228" height="62" /></p>
+<p>となるように，リサイズして表示しているものと思われます．<br />
+この１６ドット分を引いているのは，実際に両端の画像をトリミングしているかどうかは，わかりませんが．．．<br />
+再生しない状態での実際の画素数を，たとえば，<a href="http://homepage1.nifty.com/k_okada/" target="_blank">Vix</a>,や<a href="http://www.adobe.com/jp/products/premiere/" target="_blank">Premiere</a>，などのソフトで見ると，<br />
+　<span class="style13">720x480</span><br />
+となっています．</p>
+<p>さて，上記のように，PCで取り込んでそのまま映像としてみる場合にはソフトが自動的に判断してくれるようなので（他のアプリはわかりませんが），大丈夫そうですが，問題は，１フレームごとに静止画として解析する場合にはややこしくなります．<br />
+　<span class="style15">映像ファイル（AVI形式など）　→　画像ファイル（TIFF形式）</span><br />
+の際に，きちんと変換されているかどうかです．</p>
+<p>次に，<span class="style13">Premiere</span>，における変換の例をお示ししましょう．</p>
+<p><span class="style10"><a href="CCD-04.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="indexindex.html"><img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="CCD-06.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+</body>
+</html>
