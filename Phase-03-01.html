@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Phase</title>
+<link href="090413.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style10 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-RED">位相において合成 ，分割は成り立つのか？</p>
+<p>まず，以下のようなモデルを考えてみましょう．</p>
+<p><img src="Phase-21.jpg" width="470" height="287" /></p>
+<p>ここで，赤い矢印である”試料を通って結像した光線”，すなわち若干の位相のずれを持つ光線が，<br />
+　位相の遅れのない光線，と，位相の遅れのある光線<br />
+とに分割（もしくはその逆の合成）が可能か，を考えてみます．</p>
+<p>幾何学的に解くと，</p>
+<p><img src="Phase-22.jpg" width="409" height="203" /></p>
+<p>このような平行四辺形を考えると楽ですね．つまり，<br />
+　B = A + C<br />
+となればよいのです．また簡単のために，この円の半径を，１，とします．すると，</p>
+<p><img src="Phase-21.gif" width="216" height="118" /></p>
+<p>を満たすことを証明すればよいのですね．<br />
+まずは，線分Cの長さ，x，について考えましょう．線分CはAとBで作る二等辺三角形の底辺と長さが等しいので，補助線を引いて，</p>
+<p><img src="Phase-23.jpg" width="409" height="209" /></p>
+<p>この矢印の長さは，</p>
+<p><img src="Phase-22.gif" width="58" height="64" /></p>
+<p>なので，その二倍，</p>
+<p><img src="Phase-23.gif" width="75" height="64" /></p>
+<p>となります．</p>
+<p>次に，θとφとの関係を見ていきましょう．先ほどの二等辺三角形から，</p>
+<p><img src="Phase-24.gif" width="131" height="100" /></p>
+<p>つまり，</p>
+<p><img src="Phase-25.gif" width="343" height="145" /></p>
+<p>となります．<br />
+三角形の公式，sin(A+B)=sinAcosB+sinBcosA，cos(&theta;+&pi;/2)=-sin&theta;, sin(&theta;+&pi;/2)=cos&theta;(を使って，</p>
+<p><img src="Phase-26.gif" width="604" height="225" /></p>
+<p>さらに公式，sin<sup>2</sup>&theta;=(1-cos2&theta;)/2, sin&alpha;cos&beta;=1/2*[sin(&alpha;+&beta;)+sin(&alpha;-&beta;)]，から，</p>
+<p><img src="Phase-27.gif" width="597" height="233" /></p>
+<p>となり，位相においても合成，分解が成り立つことが証明されました．</p>
+<p><span class="style10"><a href="Phase-03.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+</body>
+</html>
