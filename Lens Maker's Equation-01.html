@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LensMaker-01</title>
+<style type="text/css">
+<!--
+.style1 {color: #0000FF}
+.style10 {color: #000000; }
+.style3 {
+	color: #FF0000;
+	font-size: large;
+	font-weight: bold;
+}
+-->
+</style>
+<link href="130819.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1 class="style1">レンズの曲率と焦点距離の関係（レンズメーカーの式）-01</h1>
+<p class="Large-Bold-Blue">&nbsp;</p>
+<p>レンズがいかにして光を集光するかについては，<a href="http://www.tagen.tohoku.ac.jp/labo/ishijima/microscope-04.html">ここ</a>，でお示ししましたが，<br />
+　<span class="Large-Bold-Red">レンズの曲率と焦点距離との関係はどうなっているのだろう？</span><br />
+という点について考えていきたいと思います．</p>
+<p>この問題は，いろいろなところで取り上げられていて，<br />
+　<span class="X-Large-Bold-RED">レンズメーカーの式</span><br />
+  と光学の教科書の初歩に出てくるような問題であると思います．<br />
+  今回は，きちんと考えていって，その応用として，<br />
+　水中での焦点距離はどのくらい変わるのだろうか？<br />
+を考えていきたいと思います．</p>
+<p>なお，今回の計算は，<a href="http://www7a.biglobe.ne.jp/~tomoyu/hgopt/" target="_blank">ここ</a>，を参考にしました，ありがとうございます．</p>
+<p>まず，大前提として，<br />
+  <span class="Red-Bold">　レンズの曲率はとても大きい　→　レンズの厚みは無視できる<br />
+　レンズの中心付近を通る光線のみを考える　→　三角関数を近似できる</span><br />
+として考えます．</p>
+<p><span class="Red-Bold">・レンズの曲率はとても大きい</span><br />
+そもそも，曲率とは，<br />
+　<span class="Red">ある曲線を円の一部として考える</span><br />
+ものであり，そのときの半径を曲率半径と呼びます．<br />
+すなわち，<br />
+　<span class="Red">レンズの曲面を円の一部として考える</span><br />
+と言うものです．</p>
+<p>ですので，曲率がとても大きい，と言うことは，<br />
+　<span class="Red-Bold">レンズの厚みは焦点距離に対して無視できるほど小さい</span><br />
+という近似が成り立ちます．</p>
+<p><span class="Red-Bold">・レンズの中心付近を通る光線のみを考える</span><br />
+と言うことで，光線とレンズに垂直な軸とのなす角度を小さくすることができます．<br />
+その結果，三角関数を近似することができます．具体的には，<a href="http://www.tagen.tohoku.ac.jp/labo/ishijima/Maclaurin-01.html">マクローリン展開</a>，で示したように，</p>
+<p><img src="LensMaker-01.gif" width="310" height="192" /></p>
+<p>と簡単にすることができます．</p>
+<p>では，まず最初に，ある曲率を持ったレンズに平行光を入射した場合を考えていきましょう．</p>
+<p>&nbsp;</p>
+<p><span class="style10"><a href="index.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span><a href="Lens Maker's Equation-02.html"><img src="R-arrow.png" alt="r" width="57" height="34" border="0" /></a></p>
+</body>
+</html>
