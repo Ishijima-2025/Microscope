@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Object-01</title>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-Bold-Blue"><span class="X-Large-Bold-RED">対物レンズの明るさってNAの二乗に比例するの？-01</span></p>
+<p class="Large-Bold-Blue">&nbsp;</p>
+<p>よく，<br />
+　<span class="Large-Bold-Blue">対物レンズの明るさはNAの二乗に比例する</span><br />
+と言われます．</p>
+<p>確かに，<br />
+　<span class="Blue-Bold">NAはsinθに比例するので，対物レンズの半径と比例しそうなので，面積は二乗</span><br />
+と考えれば，納得できます．</p>
+<p>現に，<a href="http://microscopelabo.jp/learn/029/index_2.html" target="_blank">オリンパス</a>，のサイトにもそう記述されています．</p>
+<p>では，計算してみましょう．</p>
+<p>一点から発せられた光は等方的に広がっていくので，<span class="Large-Bold-Red">立体角</span>を考えていけばよいでしょう．<br />
+そのうち，対物レンズがとらえることができる光はごく一部です．</p>
+<p><img src="Object-01.jpg" width="414" height="414" /></p>
+<p>図のように，<span class="Large-Bold-Blue">角度θ</span>部分に相当しますね．<br />
+この赤い部分の面積が球の表面積のどのくらいになるかを計算すればよいことになります．</p>
+<p>真横から見た図を考えます．</p>
+<p><img src="Object-02.jpg" width="404" height="404" /></p>
+<p>このdθの作る帯状の部分の面積を積分していけばよいので，円周は，</p>
+<p>\(\Large 2 \pi r sin \theta \)</p>
+<p>となります．帯の幅，dx，は，</p>
+<p>\(\Large dx = r d \theta \)</p>
+<p>となるので，面積，dS，は</p>
+<p>\(\Large dS =  2 \pi r sin \theta \times r d \theta\)</p>
+<p>\(\Large \hspace { 18 pt } =  2 \pi r^2 sin \theta  d \theta\)</p>
+<p>となります．</p>
+<p>これを，0からθまで積分すればよいので，</p>
+<p>\(\Large S = \int_0^{\theta} 2 \pi r^2 sin \theta  ' d \theta ' \)</p>
+<p>\(\Large \hspace { 18 pt } =  -2 \pi r^2 [cos \theta ' ]_0^{\theta} \)<br />
+</p>
+<p>\(\Large \hspace { 18 pt } =  2 \pi r^2 [1 - cos \theta] \)</p>
+<p>全表面積との割合は，</p>
+<p>\(\Large S_{all} =  4 \pi r^2  \)</p>
+<p>\(\Large S_{ \theta} =  2 \pi r^2 [1 - cos \theta] \)</p>
+<p>\(\Large \frac{S_{ \theta}}{S_{all}} = \frac{ 1 - cos \theta}{2}  \)</p>
+<p>となります．</p>
+<p>上記の立体角の一部分とNAとの関係は，</p>
+<p>\(\Large \frac{S_{ \theta}}{S_{all}} = \frac{ 1 - cos \theta}{2}  = \frac{1}{2} [1- \sqrt{1-sin^2 \theta}] \)</p>
+<p>\(\Large \hspace { 20 pt }  =  \frac{1}{2} [1- \sqrt{1-( \frac{NA}{n})^2}] \)</p>
+<p>となります．</p>
+<p>となると．．．．<span class="X-Large-RED">NAの二乗に比例．．ではない</span>ですね．．．</p>
+<p>ただ，<a href="https://www.semrock.com/Data/Sites/1/semrockpdfs/whitepaper_spectralmodelinginfluorescencemicroscopy.pdf" target="_blank">セムロックのHP</a>，によると，今回導き出した式と同じ式ですね．．．</p>
+<p>&nbsp;</p>
+<p>ただし，<span class="Large-Bold-Blue">NAが小さい場合</span>には，</p>
+<p>\(\Large (1 + x)^a \simeq 1 + a x \)</p>
+<p>となるので，</p>
+<p>\(\Large  \sqrt{1-( \frac{NA}{n} )^2} \simeq 1 - \frac{1}{2} ( \frac{NA}{n} )^2 \)</p>
+<p>となるので，</p>
+<p>\(\Large \frac{S_{ \theta}}{S_{all}} = \frac{1}{4} ( \frac{NA}{n} )^2 \)</p>
+<p>となり，<span class="Large-Bold-Blue">NAの二乗に比例します</span>．</p>
+<p>光ファイバーのようにNAが小さい場合には成り立ちますが，最近の顕微鏡用の対物レンズはNAが高いですからね．．．．</p>
+<p>もし，どなたかこの矛盾に対してご存じの方がおりましたら，教えてください．</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="index.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

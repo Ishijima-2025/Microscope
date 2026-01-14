@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Evanescent</title>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">エバネッセント光の減衰</p>
+<p class="X-Large-Bold-RED">&nbsp;</p>
+<p>授業なので，エバネッセント光の減衰は指数関数的になる，数十～百ナノメートル程度である，と説明していますが，ちゃんと計算したことがなかったのでトライしてみました．</p>
+<p>本来は電磁気学で解く問題かもしれませんが．．．．できれば波動光学で解きたい．．．．</p>
+<p><a href="https://www.kagakudojin.co.jp/book/b182505.html" target="_blank">一分子生物学（化学同人）</a>，の第14章に波動光学で解けるとあったのですが，残念ながら私には解けませんでした．</p>
+<p>そこで，<a href="https://www.kspub.co.jp/book/detail/1571082.html" target="_blank">顕微分光法　第10巻（講談社）</a>，を参考に計算してみました（一部座標軸の表示，屈折率など変更しています）</p>
+<p><img src="evanescent-01.jpg" width="381" height="411" alt=""/></p>
+<p>まず，X軸を境に異なる屈折率を横切る光線を考えます．</p>
+<p>スネルの法則から，</p>
+<p>\(\Large n_1 \ sin \theta_1 = n_2 \ sin \theta_2 \)</p>
+<p>となります．また，<span class="Red-Bold">n<sub>1</sub>&gt;n<sub>2</sub></span>，とします．</p>
+<p>それぞれの空間で伝搬する平面波の振動は，</p>
+<p>入射光：\(\Large u_1 \ (x,z,t) = A_0 \ exp \left[ i \left( n_1 k_0 cos \theta_1 \cdot z+n_1 k_0 sin \theta_1 \cdot x- \omega t \right) \right] \)</p>
+<p>透過光：\(\Large u_2 \ (x,z,t) = B_0 \ exp \left[ i \left( n_2 k_0 cos \theta_2 \cdot z+n_2 k_0 sin \theta_2 \cdot x- \omega t \right) \right] \)</p>
+<p>となります，ここで<span class="Red-Bold">k<sub>0</sub>は光の波数</span>で，<span class="Red-Bold">2π/λ<sub>0</sub></span>です，それぞれの媒質の屈折率によって変化していることがわかります．</p>
+<p>&nbsp;</p>
+<p class="Large-Bold-Red">・全反射</p>
+<p>入射角を大きくしていくと，</p>
+<p>\(\Large  sin \theta_2 = 1 \)</p>
+<p>となり，屈折した光は界面の境界上を平衡に伝搬するようになります． このときの入射角を臨界角と呼び， </p>
+<p>\(\Large  sin \theta_c = \frac{n_2}{n_1} \)</p>
+<p>となります．</p>
+<p>\(\Large  sin^2 \theta_2 + cos^2 \theta_2= 1 \)</p>
+<p>の関係から，</p>
+<p>\(\Large   cos^2 \theta_2= 1 - sin^2 \theta_2 = 1- \left( \frac{n_1}{n_2} sin \theta_1 \right)^2 \)</p>
+<p>\(\Large   cos \theta_2=\sqrt{ 1-  \frac{n_1^2}{n_2^2} sin^2 \theta_1  } = i  \sqrt{  \frac{n_1^2}{n_2^2} sin^2 \theta_1  -1} = i  \frac{n_1}{n_2} \sqrt{   sin^2 \theta_1  -\frac{n_2^2}{n_1^2}}\)</p>
+<p>となります．</p>
+<p>&nbsp;</p>
+<p class="Large-Bold-Red">・透過光</p>
+<p>透過光：\(\Large u_2 \ (x,z,t) = B_0 \ exp \left[ i \left( n_2 k_0 cos \theta_2 \cdot z+n_2 k_0 sin \theta_2 \cdot x- \omega t \right) \right] \)　は，</p>
+<p>\(\Large u_2 \ (x,z,t) = B_0 \ exp \left[ i \left( n_2 k_0 \left\{i  \frac{n_1}{n_2} \sqrt{   sin^2 \theta_1  -\frac{n_2^2}{n_1^2}} \right\} \cdot z+n_2 k_0 sin \theta_2 \cdot x- \omega t \right) \right] \)<br />
+  \(\Large = 
+B_0 \ exp \left[ - n_1 k_0    \sqrt{   sin^2 \theta_1  -\frac{n_2^2}{n_1^2}}  \cdot z \right] exp \left[ i \left( n_2 k_0 sin \theta_2 \cdot x- \omega t \right) \right] \)</p>
+<p>と振幅と振動に分けることができます． 光強度は振幅の二乗となるので， 強度は，</p>
+<p>\(\Large I = 
+\left\{ B_0 \ exp \left[ - n_1 k_0    \sqrt{   sin^2 \theta_1  -\frac{n_2^2}{n_1^2}}  \cdot z \right]  \right\}^2 \)</p>
+<p>\(\Large  = 
+ B_0^2 \ exp \left[ - 2 n_1 k_0    \sqrt{   sin^2 \theta_1  -\frac{n_2^2}{n_1^2}}  \cdot z \right]   \)</p>
+<p>となります．減衰率（e<sup>-1</sup>となる距離）は，</p>
+<p>\(\Large  \tau = 
+\frac{1}{ 2 n_1 k_0    \sqrt{   sin^2 \theta_1  -\frac{n_2^2}{n_1^2}}  }   \)</p>
+<p>となります．波数，\(\Large  k_0 = \frac{2 \pi}{\lambda_0}\)，から，</p>
+<p>\(\Large  \tau = 
+\frac{\lambda_0}{4 \pi n_1} \frac{1}{     \sqrt{   sin^2 \theta_1  -\frac{n_2^2}{n_1^2}}  }   \) <br />
+\(\Large =
+\frac{\lambda_0}{4 \pi n_1} \frac{1}{     \sqrt{   sin^2 \theta_1  -sin^2 \theta_c}  } \)</p>
+<p>もしくは，</p>
+<p>\(\Large =
+\frac{\lambda_0}{4 \pi } \frac{1}{     \sqrt{   n_1^2 sin^2 \theta_1  -n_2^2 }  } \)</p>
+<p>となり，<a href="https://www.olympus-lifescience.com/ja/microscope-resource/primer/java/tirf/penetration/" target="_blank">ここ</a>など，に示されている式となります．</p>
+<p>&nbsp;</p>
+<p class="Large-Bold-Red">・実際の侵入長</p>
+<p><span class="Blue-Bold">n<sub>1</sub>=1.515（ガラス）</span>，<span class="Blue-Bold">n<sub>2</sub>=1.33（水）</span>を入れると，</p>
+<p>\(\Large  sin \theta_c = 61.39  \)度</p>
+<p><span class="Blue-Bold">波長を532nm</span>，とすると最小の侵入長は，θ<sub>c</sub>が1となる角度であるので，<span class="Blue-Bold">58.35nm</span>，となります．</p>
+<p>ちなみに，入射角を<span class="Blue-Bold">70度</span>とすると，<span class="Blue-Bold">83.37nm</span>，となります．</p>
+<p>全反射ギリギリ，入射角を<span class="Blue-Bold">62度</span>とすると，<span class="Blue-Bold">296nm</span>，となります．</p>
+<p><br />
+</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="index.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
