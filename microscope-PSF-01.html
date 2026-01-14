@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PSF-01</title>
+<link href="090413.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-RED"><strong>点像分布関数 (PSF , Point spread function)  について-01 </strong></p>
+<p>さて，このAiry Discはどのようにして計算できるのでしょうか？<br />
+一般的には，タイトルのように，<a href="http://ja.wikipedia.org/wiki/%E7%82%B9%E6%8B%A1%E3%81%8C%E3%82%8A%E9%96%A2%E6%95%B0" target="_blank">PSF, Point spread function</a>と呼ばれる関数で，きちんと解く（特に二次元）とベッセル関数なるものが出てきてとてもややこしいものです．<br />
+ここでは，顕微鏡の分解能，という立場から簡単に（つまり1次元的に）解いてみましょう．<br />
+今回の計算は，いろいろな文献を拾い上げてまとめたものです．以下にその文献を挙げておきます．<br />
+　<a href="http://www.iwanami.co.jp/.BOOKS/00/X/0079450.html" target="_blank">振動・波動のききどころ</a><br />
+　<a href="http://www.kyoritsu-pub.co.jp/bookdetail/9784320056602" target="_blank">生細胞蛍光イメージング</a></p>
+<p>さて，前のページにもありますように，結像は以下の図のような光学系になります．</p>
+<p><img src="PSF-01.jpg" width="611" height="306" /></p>
+<p>ここで，レンズを通過した以降のみを考えましょう．</p>
+<p><img src="PSF-02.jpg" width="432" height="349" /></p>
+<p>この図から言えることは，<br />
+　<span class="Large-Bold-Blue">結像するには，レンズのいろいろな場所から光が集まる</span><br />
+ということですね．<br />
+では，これを分割して考えましょう．軸対象なので，</p>
+<p><img src="PSF-03.jpg" width="528" height="413" /></p>
+<p>こーんな感じに，レンズ状において光の通る道筋を分けて考えましょう．<br />
+これはすなわち，<br />
+　二点の開口部からの光の回折現象<br />
+となるわけです，ここがポイントとなります．つまり，</p>
+<p><img src="PSF-04.jpg" width="488" height="575" /></p>
+<p>こんな感じとなりますね．</p>
+<p>この2点から発せられる波が回折現象によりどのような強度分布で伝わるかを考えてみましょう．</p>
+<p><span class="style7"><a href="microscope-resolution-03.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="index.html"> <img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="microscope-PSF-02.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+</body>
+</html>

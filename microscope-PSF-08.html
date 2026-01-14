@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PSF-08</title>
+<link href="090413.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-RED"><strong>像分布関数 (PSF , Point spread function)  について-08 </strong></p>
+<p>前ページに書いたように，<br />
+  <span class="Large-Bold-RED">　二つの開口部から発せられた波をレンズを通して結像させた場合<br />
+  　一つの開口部から発せられた波</span><br />
+というのは同じ（ような）強度分布になる，と記しましたが，よく教科書には，<br />
+　二つの開口部から発せられた輝点はレンズを通して結像した場合，エアリーディスクを生じ，重なり合う<br />
+と書かれていますね．つまり，</p>
+<p><img src="PSF-13.jpg" width="702" height="411" /></p>
+<p>でも．．．．前の議論，計算から言うと，それぞれの開口部から発せられた波はすでに回折現象を起こしているので，</p>
+<p>一つの開口部の場合，</p>
+<p><img src="PSF-15.jpg" width="702" height="376" /></p>
+<p><span class="X-Large-Blue">開口部からは中心が強い強度分布となり，広がらないのでは？？？？</span><br />
+さらに，二つの開口部の場合．．．</p>
+<p><img src="PSF-14.jpg" width="702" height="394" /></p>
+<p><span class="X-Large-Blue">それぞれの開口部からの光が合成して，結局中心が強い強度分布となり，広がらないのでは？？？？</span><br />
+という疑問がわいてきました．．．</p>
+<p>二つの議論で，違うと思われるのは，<br />
+  <span class="Large-Bold-RED">　レンズ　　　 　：　レンズの大きさ　　＞＞　波長<br />
+  　一つの開口　：　開口部の大きさ 　　～　　波長</span><br />
+ですね．</p>
+<p><br />
+となると，生体試料の構造から来る回折による結像，はどちらで説明すればよいのだろう？？？？<br />
+最初は，レンズから生体試料の構造の結像を考えてみようと思ったのですが．．．</p>
+<p>たとえば，GFPのような波長以下の構造から発せられる光はレンズの考え方で説明できそうなのですが．．．．<br />
+  　<span class="X-Large-Blue">単一のGFPから発せられる光はレンズを通すと，エアリーディスクを発生する</span><br />
+  という風に（これは天体観察における星の結像といっしょですね）．<br />
+  また，<span class="Large-Blue">近接する二つのGFPからの光は，それぞれ位相が違う</span>（インコヒーレント，これは中央大，上村先生からその概念をご教授していただきました）のでそれぞれ回折現象を起こさないので，単にレンズの説明を独立に計算し，結像面で合成すればよいと思います．</p>
+<p>問題は，<span class="X-Large-Blue">明視野などの生体試料の構造を反映した場合</span>です．．．</p>
+<p> すいません．．．まだ私が理解できていないだけかもしれませんが．．．    </p>
+<p>どなたか教えていただける方は，私まで<a href="mailto:ishijima@tagen.tohoku.ac.jp">連絡</a>ください．</p>
+<p><span class="style7"><a href="microscope-PSF-07.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="index.html"> <img src="TOP.png" alt="t" width="57" height="34" /></a></span></p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PSF-05</title>
+<link href="090413.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-RED"><strong>像分布関数 (PSF , Point spread function)  について-05 </strong></p>
+<p>周期が，</p>
+<p>\( \Large  x = \frac{\lambda L}{ w} \)</p>
+<p>であるcos関数（中央が最大値となるので）は，</p>
+<p>\( \Large  cos \left( 2 \pi  \frac{w}{\lambda L} x \right)= cos (kwx) \)</p>
+<p>となります．<br />
+これを，ｗ，を0から一定値（ｈとします）まで積分して，二乗（強度なので）したものが，結像面での強度分布となります．</p>
+<p>\( \Large  \begin{eqnarray} I &amp;=&amp; \left[ \displaystyle \int_{0}^{ h } cos(kwx) dw \right]^2 \\<br>
+  &amp;=&amp; \left[ \frac{1}{kx} sin kwx \right]^2 \\<br>
+&amp;=&amp; \frac{sin^2 khx}{(kx)^2} \\<br>
+\end{eqnarray} \)</p>
+<p>A≡khとすると，</p>
+<p>\( \Large  \propto \frac{sin^2 Ax}{ (Ax)^2} \)</p>
+<p>と簡単に書くことができます．<br />
+エクセルで計算すると，</p>
+<p><img src="PSF-10.jpg" alt="" width="739" height="492" /></p>
+<p>となり，<a href="microscope-resolution-02.html">ここ</a>，で示したのと同様のカーブとなります．</p>
+<p>次に，レンズではなく，微小開口から発せられた光がどう回折するのかを検証しましょう．</p>
+<p><span class="style7"><a href="microscope-PSF-04.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="index.html"> <img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="microscope-PSF-06.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+</body>
+</html>

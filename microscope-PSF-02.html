@@ -1,0 +1,67 @@
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PSF-01</title>
+<link href="090413.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-RED"><strong>点像分布関数 (PSF , Point spread function)  について-02 </strong></p>
+<p>二つの開口部から発せられた波は回折現象を起こします．<br />
+そして，波と波が強め合ったり，弱めあったりします．<br />
+図の点線を波の周期とすると，ちょうど点線が交差した場所が強め合うところとなります．<br />
+赤線が，その強めあった点を結んだものです．<br />
+図からわかるように，光強度が強い場所と弱い場所が交互に現れます．</p>
+<p><img src="PSF-05.jpg" width="488" height="575" /></p>
+<p>この光強度の間隔が二つの開口部の間隔，波長などとどう関係するかを考えていきましょう．<br />
+次の図で考えてみます．</p>
+<p><img src="PSF-06.jpg" width="608" height="321" /></p>
+<p><span class="X-Large-Blue">w</span>だけ離れた二点の開口部から波が発生し，<span class="X-Large-Blue">r<sub>1</sub>, r<sub>2</sub></span>の距離を経て，<span class="X-Large-Blue">L</span>だけ離れたスクリーンに到達します．<br />
+その位置は二点の開口部の中心から，<span class="X-Large-Blue">φ</span>，の角度となります．</p>
+<p>それぞれの開口部からは波が同心円状に広がっていくのですが，その波形は，</p>
+<p>\( \Large     cos ( k \ r - \omega \ t + \theta_0) \)</p>
+<p>と表すことができます．<br />
+もう少し，中身を説明すると，<br />
+<span class="Large-Blue">　kr：ｒの距離での波形の状態を示します（ｋ：波数，ｋ＝２π/λ）<br />
+　ωｔ：時間とともに変化する項です<br />
+　θ<sub>0</sub>：開口部から発せられる際の位相です．</span><br />
+となります．</p>
+<p>ここで，重要なのは，<br />
+　二つの開口部から発せられた（r<sub>1</sub>，r<sub>2</sub>を通って）波がどう強め合うか，弱め合うか<br />
+ですので，重要なのは，<br />
+<span class="X-Large-Blue">　最初の項の，kr（kr<sub>1</sub>，kr<sub>2</sub>）</span><br />
+となります．</p>
+<p>さて，この二つの波の合成波は，</p>
+<p>\( \Large     cos ( k \ r_1 - \omega \ t + \theta_0) + cos ( k \ r_2 - \omega \ t + \theta_0)\)</p>
+<p>ですので，一番強め合う条件は，</p>
+<p>\( \Large      k \ r_1 - k \ r_2 = 2 \pi n \)</p>
+<p> （ｎは整数）</p>
+<p>となります．</p>
+<p>では，次のページにこの計算をしてみましょう．</p>
+<p><span class="style7"><a href="microscope-PSF-01.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="index.html"> <img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="microscope-PSF-03.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PSF-03</title>
+<link href="090413.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PSF-04</title>
+<link href="090413.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-RED"><strong>像分布関数 (PSF , Point spread function)  について-04 </strong></p>
+<p>&nbsp;</p>
+<p>\( \Large   sin \phi =  \frac{\lambda}{w} n \)</p>
+<p>という関係式と，最初のモデルから，以下の二つの三角形を表すことができます．<br />
+これは相似形となりますね．<br />
+また，中央付近の間隔なので，n=1，としました．</p>
+<p><img src="PSF-08.jpg" width="608" height="477" /></p>
+<p>相似の関係から，</p>
+<p>\( \Large \sqrt{L^2 + x^2} : x = w : \lambda \)</p>
+<p>となります．</p>
+<p>\( \Large L^2 + x^2 = \frac{x^2 w^2}{ \lambda^2} \)</p>
+<p>\( \Large  x^2 = \frac{\lambda^2 L^2}{ w^2-\lambda^2} \)</p>
+<p>ここで，<a href="microscope-PSF-03-2.html">ここ</a>に記載したように，</p>
+<p>\( \Large w &gt;&gt; \lambda \)</p>
+<p>となりますので，</p>
+<p>\( \Large  x = \frac{\lambda L}{ w} \)</p>
+<p>となります．<br />
+つまり，</p>
+<p><img src="PSF-09.jpg" width="589" height="289" /></p>
+<p>となります．</p>
+<p>次に，この結像面での強度分布を計算してみましょう．</p>
+<p><span class="style7"><a href="microscope-PSF-03.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="index.html"> <img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="microscope-PSF-05.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

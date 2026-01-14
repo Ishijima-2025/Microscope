@@ -1,0 +1,70 @@
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PSF-03</title>
+<link href="090413.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-RED"><strong>像分布関数 (PSF , Point spread function)  について-03 </strong></p>
+<p>では，ｒ<sub>2</sub>-ｒ<sub>1</sub>，を計算してみましょう．</p>
+<p><img src="PSF-07.jpg" width="808" height="321" /></p>
+<p>この色をつけた二つの三角形から，ｒ<sub>2</sub>-ｒ<sub>1</sub>，が求まります．</p>
+<p>\( \Large r_2^2 = \left( r_0 \ cos   \phi \right)^2 + \left( r_0 \ sin   \phi -\frac{w}{2} \right)^2 \)</p>
+<p>\( \Large r_1^2 = \left( r_0 \ cos   \phi \right)^2 + \left( r_0 \ sin   \phi +\frac{w}{2} \right)^2 \)</p>
+<p>\( \Large \begin{eqnarray} r_2 &amp;=&amp; \sqrt{r_0^2 \cdot cos^2 \phi + r_0^2 \cdot sin^2 \phi -w \cdot r_0 \cdot sin \phi + \frac{w^2}{4}} \\
+  <br>
+  &amp;=&amp; 
+\sqrt{r_0^2  -w \cdot r_0 \cdot sin \phi + \frac{w^2}{4}} \\<br>
+\end{eqnarray} \)</p>
+<p>\( \Large \begin{eqnarray} r_1 &amp;=&amp; \sqrt{r_0^2 \cdot cos^2 \phi + r_0^2 \cdot sin^2 \phi +w \cdot r_0 \cdot sin \phi + \frac{w^2}{4}} \\ <br>
+&amp;=&amp; 
+\sqrt{r_0^2  +w \cdot r_0 \cdot sin \phi + \frac{w^2}{4}} \\<br>
+\end{eqnarray} \)</p>
+<p>と書き直すことができます．<br />
+ここで，r<sub>0</sub> &gt;&gt; d，と考えていいので，最後の項を無視することができ，</p>
+<p>\( \Large  r_2 = \sqrt{r_0^2  -w \cdot r_0 \cdot sin \phi}  \)</p>
+<p>\( \Large  r_1 = \sqrt{r_0^2  +w \cdot r_0 \cdot sin \phi}  \)</p>
+<p>となります．</p>
+<p>さて，ここでさらに変換して，</p>
+<p>\( \Large  \begin{eqnarray} r_2 &amp;=&amp; \sqrt{ \left(r_0^2  -\frac{w}{2} \cdot sin \phi \right)^2 -\frac{w^2}{4} \cdot  sin^2 \phi}  \\<br>
+  &amp;=&amp; 
+r_0^2  -\frac{w}{2} \cdot sin \phi  \\<br>
+\end{eqnarray} \)</p>
+<p>\( \Large  \begin{eqnarray} r_1 &amp;=&amp; \sqrt{ \left(r_0^2  +\frac{w}{2} \cdot sin \phi \right)^2 -\frac{w^2}{4} \cdot  sin^2 \phi}  \\<br>
+&amp;=&amp; 
+r_0^2  +\frac{w}{2} \cdot sin \phi  \\<br>
+\end{eqnarray} \)</p>
+<p>\( \Large  r_1 = \sqrt{ \left(r_0^2  +\frac{w}{2} \cdot sin \phi \right) -\frac{w^2}{4} \cdot  sin^2 \phi}  \)</p>
+<p>となります．ここでもまた最後の項を無視しました．</p>
+<p>従って，</p>
+<p>\( \Large   sin \phi = \frac{2 \pi n}{k w} = \frac{\lambda}{w} n \)</p>
+<p>と簡単にすることができます．</p>
+<p>さて，次に，これがどう結像面での大きさになるかを計算してみましょう．</p>
+<p>一つ気になることがあるのですが，本筋から外れるので<a href="microscope-PSF-03-2.html">ここ</a>に．</p>
+<p><span class="style7"><a href="microscope-PSF-02.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="index.html"> <img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="microscope-PSF-04.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+</body>
+</html>

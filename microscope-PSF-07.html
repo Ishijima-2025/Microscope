@@ -1,0 +1,69 @@
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PSF-07</title>
+<link href="090413.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-RED"><strong>像分布関数 (PSF , Point spread function)  について-07 </strong></p>
+<p>以下のようなモデルを考えます．</p>
+<p><img src="PSF-12.jpg" width="506" height="391" /></p>
+<p>各点から発せられる波の結像面での波の大きさは，</p>
+<p>\( \Large     cos \left[ k \ (r_0 - x sin \phi ) - \omega t + \theta_0 \right] \)</p>
+<p>となります．この導出の仕方は，<a href="microscope-PSF-03.html">ここ</a>，を参考にしてみてください．<br />
+これを，-ｗ/2からw/2まで積分するので，</p>
+<p>\( \Large     \displaystyle \int_{-\frac{w}{2}}^{ \frac{w}{2} }  cos \left[ k \ (r_0 - x sin \phi ) - \omega t + \theta_0 \right] dx \)</p>
+<p>すればいいですね．<br />
+ここで，関係ない項目をまとめて，</p>
+<p>\( \Large     R \equiv k r_0  - \omega t + \theta \)</p>
+<p>とすれば，</p>
+<p>\( \Large     \displaystyle \int_{-\frac{w}{2}}^{ \frac{w}{2} }  cos \left[ R - k \ sin \ \phi x \right] dx \)</p>
+<p>\( \Large     \hspace{ 10pt } y\equiv  R - k \ sin \ \phi x \)</p>
+<p>  \( \Large     \hspace{ 10pt } dy =  - k \ sin \ \phi dx \)</p>
+<p>\( \Large     \hspace{ 10pt } \begin{pmatrix} <br>
+-\frac{w}{2} \hspace{ 10pt }\sim \hspace{ 10pt }x \hspace{ 10pt } \sim \hspace{ 10pt } \frac{w}{2}  \\<br>
+R + \frac{kw}{2} sin \phi \sim y \sim R - \frac{kw}{2} sin \phi<br>
+\end{pmatrix} \)</p>
+<p>\( \Large     = \displaystyle \int_{R + \frac{kw}{2}}^{ R - \frac{kw}{2} }  \frac{1}{-k \ sin \phi }cos y dy \)</p>
+<p>\( \Large     =   \frac{1}{-k \ sin \phi } \left[sin \left( R-\frac{kd}{2} sin \phi \right) -sin \left( R+\frac{kd}{2} sin \phi \right) \right] \)</p>
+<p>\( \Large     =   \frac{1}{k \ sin \phi } 2 \ sin (kw \ sin \phi ) \ cos R \)</p>
+<p>\( \Large     =   \frac{1}{k \ sin \phi } 2 \ sin (kw \ sin \phi ) \ cos (kr_0 -\omega t + \theta) \)</p>
+<p>この式の，</p>
+<p>\( \Large        \frac{2 \ sin (kw \ sin \phi )}{k \ sin \phi }   \)</p>
+<p>部分が振幅となり，この二乗が強度となりますので，<a href="microscope-PSF-05.html">前回導出した波形</a>と同じ形となります．</p>
+<p>つまり，<br />
+  <span class="Large-Bold-RED">　二つの開口部から発せられた波をレンズを通して結像させた場合<br />
+  　一つの開口部から発せられた波</span><br />
+というのは同じ（ような）強度分布になる，と言えますね．</p>
+<p>さて，一件落着，と思ったのですが．．．．．<br />
+ふと．．．．まだ納得していない点があることに気づきました．．．．<br />
+それは，次のページに．．．</p>
+<p><span class="style7"><a href="microscope-PSF-06.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="index.html"> <img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="microscope-PSF-08.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

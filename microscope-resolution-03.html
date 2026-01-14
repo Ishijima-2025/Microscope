@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無題ドキュメント</title>
+<style type="text/css">
+<!--
+.style1 {color: #0000FF}
+.style2 {	font-size: x-large;
+	color: #FF0000;
+	font-weight: bold;
+}
+.style4 {color: #0000FF; font-size: large; }
+.style5 {	font-size: large;
+	color: #FF0000;
+}
+.style13 {color: #000000; }
+-->
+</style>
+</head>
+
+<body>
+<h2 class="style1">顕微鏡の分解能，その３</h2>
+<p>２点から発せられた光の結像はどうなるのか見てみましょう．</p>
+<p><img src="image-double-02.jpg" width="755" height="306" /></p>
+<p>まずは，うんと離れている場合．</p>
+<p><img src="Airy Disc-03_1.jpg" width="715" height="417" /></p>
+<p>赤い線と青い線が，それぞれの輝点からの結像像です．<br />
+  これらの光は合成することができるので，点線の強度分布が我々が観察できる点です．<br />
+  この時点では，青と赤の線の合成において，二つのピークがはっきりと確認できます．</p>
+<p>さて，近づいてくると，</p>
+<p><img src="Airy Disc-03_2.jpg" width="715" height="417" /></p>
+<p>これは，ちょうど一つの強度分布（この場合は青）の強度が０になった点ともう一つの強度分布（この場合は赤）の中心と位置が一致する場合です．<br />
+  こうなると，合成強度を見ると，中心の強度が強くなり（ピークの２６％減），区別しにくくなっていますね．</p>
+<p>もっと近づくと，</p>
+<p><img src="Airy Disc-03_3.jpg" width="715" height="417" /></p>
+<p>こうなると，もはや青と赤の強度分布は完全に一つの強度分布と区別つかなくなります．<br />
+  動画に関しては，<a href="nano.html">このサイト</a>に，アップしてあります．</p>
+<p>じゃあ，どこまで近づくと我々は区別できなくなるか，というと，上の図の真ん中，<br />
+  中央の強度の半径分だけずれた場合<br />
+  を分解能と提案されたのです．</p>
+<p><img src="microscope-resolution-01.gif" width="277" height="90" /></p>
+<p>では，その際に，サンプル１とサンプル２はどの程度離れているか，というと途中の計算はとばして，結論だけを述べると，</p>
+<p><img src="microscope-resolution-02.gif" width="242" height="90" /></p>
+<p>となります．<br />
+  前の式（R'の式）とそれぞれ”’”がないのに注意してください．</p>
+<p>この式でわかることは，分解能（δ）を向上させるには，<br />
+    <span class="style2">　 波長（λ）を短くする<br />
+      　
+      θを大きくする</span><br />
+  ことをすればよいことがわかります．</p>
+<p>では，具体的に，値を入れてみましょう．<br />
+  まずは波長，緑色の光を例に取ると，<br />
+  λ＝５５０nm<br />
+  分母のθは結局，<br />
+  <span class="style4">　以下に光を集められるか</span><br />
+  という意味と同じになります．<br />
+  もちろん，θの上限は９０度です．<br />
+  ｎに関しては，ガラスの屈折率が大体１．５．<br />
+  現実的な値は，<br />
+  ｎ・sinθ＝１．３０<br />
+  程度なので，<br />
+  <span class="style4">　５５０nm÷１．３０×０．６１＝２５８nm</span><br />
+  つまり，<span class="style5">０．２ミクロン程度</span>が光学顕微鏡の分解能の限界となります．</p>
+<p>ここで，重要となるのは分母の，<br />
+    <span class="style5">　ｎ・sinθ</span><br />
+  となる値．<br />
+  これは，レンズの性能，つまり対物レンズの性能となります．<br />
+  この値がよいほど，分解能がよくなるのです．<br />
+  この値を，<br />
+  <span class="style2">　Ｎ．Ａ．（numerical aperture，開口数）</span><br />
+  と呼び，顕微鏡の性能において，一番重要な指標となります．</p>
+<p>ここで，さらに重要なのが，<br />
+  開口数には倍率は関係ない<br />
+  と言う点．<br />
+  ですので，倍率の高い対物レンズが高性能，と言うわけではないのです．<br />
+  たとえば，分解能の上下は，<br />
+  ×４０，Ｎ．Ａ．＝１．３　＞　×６０，Ｎ．Ａ．＝０．８５<br />
+  なのです．</p>
+<p>対物レンズの胴体を見てください，かならずＮ．Ａ．の表示があるはずです．</p>
+<p>Ｎ．Ａ．を上げるのではなく，波長，λ，をうーんと短くしても結果としての分解能は向上します．<br />
+  これが，電子顕微鏡なのです．<br />
+  ですので，光学顕微鏡も電子顕微鏡も基本的には同様の原理を使っているのです．</p>
+<p><span class="style13"><a href="microscope-resolution-02.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="kenkyu.html"><img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="aberration-01.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span></p>
+<p class="style1">&nbsp; </p>
+</body>
+</html>
