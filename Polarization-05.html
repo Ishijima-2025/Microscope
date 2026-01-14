@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Polarization-05</title>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">偏光顕微鏡のなぞ-05</p>
+<p class="Large-Bold-Red">&nbsp;</p>
+<p class="Large-Bold-Red">どの程度光が透過するか？</p>
+<p>斜めの楕円では計算が面倒なので，水平な楕円を考えていきましょう．</p>
+<p><img src="Polarization-12.png" width="463" height="429" /></p>
+<p>この第一象限のX,Yのベクトルの大きさを比較すればいいのです．</p>
+<p>しかし，円運動と違って角速度が角度によって変化してしまいますので，単純に積分することはできません．</p>
+<p>X,Y，それぞれの波形は，</p>
+<p>\(\Large x = 
+E_{0x} \  cos (kz - \omega t + \delta_x) \)</p>
+<p>\(\Large y = 
+E_{0y} \  cos (kz - \omega t + \delta_y) \)</p>
+<p>ここで，簡単に，z=0, E<sub>0x</sub>=x<sub>0</sub>, E<sub>0y</sub>=y<sub>0</sub>，δ<sub>x</sub>=0，δ<sub>y</sub>=π/2，とすれば，</p>
+<p>\(\Large x = 
+  x_0 \ cos ( - \omega t) \)</p>
+<p>\(\Large y = 
+    y_0 sin ( - \omega t ) \)</p>
+<p>となります．</p>
+<p>ここで，各時刻での偏光面の傾きを</p>
+<p>\(\Large \alpha = 
+\frac{y}{x} \)</p>
+<p>とすれば，</p>
+<p>\(\Large \alpha = 
+\frac{y_0}{x_0} \ tan \omega t \)</p>
+<p>となります．従ってそのときの角度，θ(t)は，</p>
+<p>\(\Large \theta (t) = tan^{-1}\alpha = 
+tan^{-1} \left[ \frac{y_0}{x_0} \ tan \omega t \right] \)</p>
+<p>となります．また，</p>
+<p>\(\Large x(t) = 
+r(t) \ cos (  \theta) \)</p>
+<p>\(\Large y(t) = 
+  r(t) \ sin ( \theta ) \)</p>
+<p>で表すことができます．</p>
+<p>この計算は解析的に解くことが（私には．．．）できませんので，Δｔを細かく刻んで，ｘ，ｙの総和を求めてその比を求めてみると，</p>
+<p>\(\Large  
+\frac{Sum \ of \ y}{Sum \ of \ x} = \frac{y_0}{x_0} \)</p>
+<p>となることがわかりました．つまり，</p>
+<p>つまり．．．．</p>
+<p class="X-Large-Bold-RED">　楕円の扁平率がクロスニコル状態での振幅の割合</p>
+<p class="X-Large-Bold-RED">　楕円の扁平率の二乗がクロスニコル状態での強度の割合</p>
+<p>と考えて良さそうです．</p>
+<p>楕円の扁平率と，xy平面上における位相差，との関係は．．．．．考えます．．．</p>
+<p><a href="http://fnorio.com/0124polarization_of_light0/polarization_of_light0.html" target="_blank">ここ</a>，を参考にすれば良さそうです．どうも答えは，</p>
+<p>\(\Large sin \left( 2 \frac{y_0}{x_0} \right) = sin \left(  \delta_y- \delta_x  \right) \)</p>
+<p>となるようです．</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="Polarization-04.html"><img src="L-arrow.png" alt="l" width="57" height="34" border="0" /></a> <a href="index.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
